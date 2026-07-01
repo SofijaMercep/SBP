@@ -1,0 +1,54 @@
+PITANJE 3 - V1 / NEOPTIMIZOVANA SEMA
+============================================================
+Koji filmovi imaju prosjecnu MovieLens ocjenu vecu od 4.1, najmanje 2.000 korisnickih ocjena, TMDB popularnost manju od 15, poznat budzet i prihod, ali budzet veci od prihoda?
+
+Vrijeme izvrsavanja: 69.706 sekundi
+Broj rezultata: 4
+
+1. All About Eve (1950)
+   MovieLens movieId: 926
+   TMDB id: 705
+   Zanrovi: Drama
+   Prosjecna ocjena: 4.17
+   Broj ocjena: 5068
+   Budzet: 1400000
+   Prihod: 63463
+   Gubitak prema budzetu: 1336537
+   Odnos prihoda i budzeta: 0.045
+   TMDB popularnost: 12.06308
+
+2. Ran (1985)
+   MovieLens movieId: 1217
+   TMDB id: 11645
+   Zanrovi: Action, Drama, History
+   Prosjecna ocjena: 4.142
+   Broj ocjena: 5220
+   Budzet: 11500000
+   Prihod: 4069653
+   Gubitak prema budzetu: 7430347
+   Odnos prihoda i budzeta: 0.354
+   TMDB popularnost: 12.250232
+
+3. Rashomon (1950)
+   MovieLens movieId: 5291
+   TMDB id: 548
+   Zanrovi: Crime, Drama, Mystery
+   Prosjecna ocjena: 4.127
+   Broj ocjena: 4721
+   Budzet: 250000
+   Prihod: 96568
+   Gubitak prema budzetu: 153432
+   Odnos prihoda i budzeta: 0.386
+   TMDB popularnost: 9.887355
+
+4. City Lights (1931)
+   MovieLens movieId: 3307
+   TMDB id: 901
+   Zanrovi: Comedy, Drama, Romance
+   Prosjecna ocjena: 4.111
+   Broj ocjena: 3170
+   Budzet: 1500000
+   Prihod: 19181
+   Gubitak prema budzetu: 1480819
+   Odnos prihoda i budzeta: 0.013
+   TMDB popularnost: 10.891524

@@ -1,0 +1,193 @@
+PITANJE 2 - V2 / REORGANIZOVANA OPTIMIZOVANA SEMA
+======================================================================
+Koji glumci iz prva 3 mjesta u cast listi se najcesce pojavljuju u filmovima koji imaju prosjecnu MovieLens ocjenu vecu od 4.0, najmanje 1.000 korisnickih ocjena i prihod veci od budzeta?
+
+Vrijeme izvrsavanja: 0.125 sekundi
+Broj rezultata: 20
+
+1. Marlon Brando
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.142
+   Ukupan broj MovieLens ocjena: 90971
+   Primjeri filmova:
+   - The Godfather (1972), ocjena: 4.324, broj ocjena: 52498, budzet: 6000000, prihod: 245066411, profit: 239066411
+   - On the Waterfront (1954), ocjena: 4.128, broj ocjena: 5880, budzet: 910000, prihod: 9600000, profit: 8690000
+   - Apocalypse Now (1979), ocjena: 4.115, broj ocjena: 26370, budzet: 31500000, prihod: 89460381, profit: 57960381
+   - A Streetcar Named Desire (1951), ocjena: 4.001, broj ocjena: 6223, budzet: 1800000, prihod: 8000000, profit: 6200000
+
+2. Humphrey Bogart
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.137
+   Ukupan broj MovieLens ocjena: 54786
+   Primjeri filmova:
+   - Casablanca (1942), ocjena: 4.207, broj ocjena: 26890, budzet: 878000, prihod: 10462500, profit: 9584500
+   - The Maltese Falcon (1941), ocjena: 4.154, broj ocjena: 12257, budzet: 375000, prihod: 1000000, profit: 625000
+   - The Treasure of the Sierra Madre (1948), ocjena: 4.123, broj ocjena: 5360, budzet: 3800000, prihod: 4307000, profit: 507000
+   - The African Queen (1951), ocjena: 4.066, broj ocjena: 10279, budzet: 1300000, prihod: 10750000, profit: 9450000
+
+3. Jack Nicholson
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.132
+   Ukupan broj MovieLens ocjena: 108261
+   Primjeri filmova:
+   - One Flew Over the Cuckoo's Nest (1975), ocjena: 4.219, broj ocjena: 36058, budzet: 3000000, prihod: 108981275, profit: 105981275
+   - Chinatown (1974), ocjena: 4.159, broj ocjena: 16929, budzet: 6000000, prihod: 30000000, profit: 24000000
+   - The Departed (2006), ocjena: 4.121, broj ocjena: 25343, budzet: 90000000, prihod: 289847354, profit: 199847354
+   - The Shining (1980), ocjena: 4.028, broj ocjena: 29931, budzet: 19000000, prihod: 44017374, profit: 25017374
+
+4. Harrison Ford
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.126
+   Ukupan broj MovieLens ocjena: 217455
+   Primjeri filmova:
+   - The Empire Strikes Back (1980), ocjena: 4.144, broj ocjena: 57361, budzet: 18000000, prihod: 538400000, profit: 520400000
+   - Raiders of the Lost Ark (1981), ocjena: 4.124, broj ocjena: 54675, budzet: 18000000, prihod: 389925971, profit: 371925971
+   - Star Wars (1977), ocjena: 4.12, broj ocjena: 68717, budzet: 11000000, prihod: 775398007, profit: 764398007
+   - Blade Runner (1982), ocjena: 4.116, broj ocjena: 36702, budzet: 28000000, prihod: 33139618, profit: 5139618
+
+5. James Stewart
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.101
+   Ukupan broj MovieLens ocjena: 57205
+   Primjeri filmova:
+   - Rear Window (1954), ocjena: 4.238, broj ocjena: 20162, budzet: 1000000, prihod: 36764313, profit: 35764313
+   - Vertigo (1958), ocjena: 4.121, broj ocjena: 15945, budzet: 2479000, prihod: 28000000, profit: 25521000
+   - It's a Wonderful Life (1946), ocjena: 4.033, broj ocjena: 15384, budzet: 3180000, prihod: 9644124, profit: 6464124
+   - Mr. Smith Goes to Washington (1939), ocjena: 4.011, broj ocjena: 5714, budzet: 1500000, prihod: 9600000, profit: 8100000
+
+6. Paul Newman
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.086
+   Ukupan broj MovieLens ocjena: 46752
+   Primjeri filmova:
+   - The Sting (1973), ocjena: 4.142, broj ocjena: 15675, budzet: 5500000, prihod: 159616327, profit: 154116327
+   - Cool Hand Luke (1967), ocjena: 4.09, broj ocjena: 11533, budzet: 3000000, prihod: 16217773, profit: 13217773
+   - The Hustler (1961), ocjena: 4.073, broj ocjena: 4279, budzet: 2000000, prihod: 7600000, profit: 5600000
+   - Butch Cassidy and the Sundance Kid (1969), ocjena: 4.04, broj ocjena: 15265, budzet: 6000000, prihod: 102308889, profit: 96308889
+
+7. Matt Damon
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.068
+   Ukupan broj MovieLens ocjena: 127562
+   Primjeri filmova:
+   - The Departed (2006), ocjena: 4.121, broj ocjena: 25343, budzet: 90000000, prihod: 289847354, profit: 199847354
+   - Good Will Hunting (1997), ocjena: 4.075, broj ocjena: 38947, budzet: 10000000, prihod: 225933435, profit: 215933435
+   - Saving Private Ryan (1998), ocjena: 4.044, broj ocjena: 46783, budzet: 70000000, prihod: 481840909, profit: 411840909
+   - The Martian (2015), ocjena: 4.033, broj ocjena: 16489, budzet: 108000000, prihod: 630161890, profit: 522161890
+
+8. Cary Grant
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.135
+   Ukupan broj MovieLens ocjena: 26171
+   Primjeri filmova:
+   - North by Northwest (1959), ocjena: 4.197, broj ocjena: 16850, budzet: 4000000, prihod: 13275000, profit: 9275000
+   - Notorious (1946), ocjena: 4.161, broj ocjena: 5062, budzet: 2000000, prihod: 24464742, profit: 22464742
+   - Charade (1963), ocjena: 4.047, broj ocjena: 4259, budzet: 4000000, prihod: 13474588, profit: 9474588
+
+9. William Holden
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.108
+   Ukupan broj MovieLens ocjena: 25754
+   Primjeri filmova:
+   - Sunset Boulevard (1950), ocjena: 4.207, broj ocjena: 7368, budzet: 1752000, prihod: 5000000, profit: 3248000
+   - The Bridge on the River Kwai (1957), ocjena: 4.095, broj ocjena: 12634, budzet: 3000000, prihod: 27200000, profit: 24200000
+   - Network (1976), ocjena: 4.022, broj ocjena: 5752, budzet: 3800000, prihod: 23689877, profit: 19889877
+
+10. Brad Pitt
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.106
+   Ukupan broj MovieLens ocjena: 132446
+   Primjeri filmova:
+   - Fight Club (1999), ocjena: 4.228, broj ocjena: 58773, budzet: 63000000, prihod: 100853753, profit: 37853753
+   - Se7en (1995), ocjena: 4.079, broj ocjena: 50596, budzet: 33000000, prihod: 327311859, profit: 294311859
+   - Inglourious Basterds (2009), ocjena: 4.011, broj ocjena: 23077, budzet: 70000000, prihod: 319131050, profit: 249131050
+
+11. Robert De Niro
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.106
+   Ukupan broj MovieLens ocjena: 72508
+   Primjeri filmova:
+   - GoodFellas (1990), ocjena: 4.181, broj ocjena: 32663, budzet: 25000000, prihod: 46836394, profit: 21836394
+   - Taxi Driver (1976), ocjena: 4.083, broj ocjena: 29133, budzet: 1300000, prihod: 28262574, profit: 26962574
+   - Raging Bull (1980), ocjena: 4.053, broj ocjena: 10712, budzet: 18000000, prihod: 23000000, profit: 5000000
+
+12. Grace Kelly
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.103
+   Ukupan broj MovieLens ocjena: 31206
+   Primjeri filmova:
+   - Rear Window (1954), ocjena: 4.238, broj ocjena: 20162, budzet: 1000000, prihod: 36764313, profit: 35764313
+   - High Noon (1952), ocjena: 4.038, broj ocjena: 5045, budzet: 730000, prihod: 8000000, profit: 7270000
+   - Dial M for Murder (1954), ocjena: 4.034, broj ocjena: 5999, budzet: 1400000, prihod: 3000000, profit: 1600000
+
+13. Christian Bale
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.096
+   Ukupan broj MovieLens ocjena: 71842
+   Primjeri filmova:
+   - The Dark Knight (2008), ocjena: 4.167, broj ocjena: 41519, budzet: 185000000, prihod: 1004558444, profit: 819558444
+   - The Prestige (2006), ocjena: 4.093, broj ocjena: 22943, budzet: 40000000, prihod: 109676311, profit: 69676311
+   - The Big Short (2015), ocjena: 4.027, broj ocjena: 7380, budzet: 28000000, prihod: 133346506, profit: 105346506
+
+14. Leonardo DiCaprio
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.094
+   Ukupan broj MovieLens ocjena: 84925
+   Primjeri filmova:
+   - Inception (2010), ocjena: 4.156, broj ocjena: 38895, budzet: 160000000, prihod: 825532764, profit: 665532764
+   - The Departed (2006), ocjena: 4.121, broj ocjena: 25343, budzet: 90000000, prihod: 289847354, profit: 199847354
+   - Django Unchained (2012), ocjena: 4.005, broj ocjena: 20687, budzet: 100000000, prihod: 425368238, profit: 325368238
+
+15. Elijah Wood
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.083
+   Ukupan broj MovieLens ocjena: 157671
+   Primjeri filmova:
+   - The Lord of the Rings: The Fellowship of the Ring (2001), ocjena: 4.091, broj ocjena: 55736, budzet: 93000000, prihod: 871368364, profit: 778368364
+   - The Lord of the Rings: The Return of the King (2003), ocjena: 4.09, broj ocjena: 50797, budzet: 94000000, prihod: 1118888979, profit: 1024888979
+   - The Lord of the Rings: The Two Towers (2002), ocjena: 4.068, broj ocjena: 51138, budzet: 79000000, prihod: 926287400, profit: 847287400
+
+16. Ian McKellen
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.083
+   Ukupan broj MovieLens ocjena: 157671
+   Primjeri filmova:
+   - The Lord of the Rings: The Fellowship of the Ring (2001), ocjena: 4.091, broj ocjena: 55736, budzet: 93000000, prihod: 871368364, profit: 778368364
+   - The Lord of the Rings: The Return of the King (2003), ocjena: 4.09, broj ocjena: 50797, budzet: 94000000, prihod: 1118888979, profit: 1024888979
+   - The Lord of the Rings: The Two Towers (2002), ocjena: 4.068, broj ocjena: 51138, budzet: 79000000, prihod: 926287400, profit: 847287400
+
+17. Robert Redford
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.071
+   Ukupan broj MovieLens ocjena: 36003
+   Primjeri filmova:
+   - The Sting (1973), ocjena: 4.142, broj ocjena: 15675, budzet: 5500000, prihod: 159616327, profit: 154116327
+   - Butch Cassidy and the Sundance Kid (1969), ocjena: 4.04, broj ocjena: 15265, budzet: 6000000, prihod: 102308889, profit: 96308889
+   - All the President's Men (1976), ocjena: 4.031, broj ocjena: 5063, budzet: 8500000, prihod: 70600000, profit: 62100000
+
+18. Kevin Spacey
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.063
+   Ukupan broj MovieLens ocjena: 92465
+   Primjeri filmova:
+   - American Beauty (1999), ocjena: 4.107, broj ocjena: 53689, budzet: 15000000, prihod: 356296601, profit: 341296601
+   - L.A. Confidential (1997), ocjena: 4.063, broj ocjena: 27749, budzet: 35000000, prihod: 126216940, profit: 91216940
+   - Moon (2009), ocjena: 4.018, broj ocjena: 11027, budzet: 5000000, prihod: 9760104, profit: 4760104
+
+19. Charlie Chaplin
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.062
+   Ukupan broj MovieLens ocjena: 11669
+   Primjeri filmova:
+   - Modern Times (1936), ocjena: 4.091, broj ocjena: 4872, budzet: 1, prihod: 8500000, profit: 8499999
+   - The Great Dictator (1940), ocjena: 4.049, broj ocjena: 4439, budzet: 2000000, prihod: 11000000, profit: 9000000
+   - The Gold Rush (1925), ocjena: 4.046, broj ocjena: 2358, budzet: 923000, prihod: 2500000, profit: 1577000
+
+20. Tom Hanks
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.04
+   Ukupan broj MovieLens ocjena: 158756
+   Primjeri filmova:
+   - Forrest Gump (1994), ocjena: 4.048, broj ocjena: 81491, budzet: 55000000, prihod: 677945399, profit: 622945399
+   - Saving Private Ryan (1998), ocjena: 4.044, broj ocjena: 46783, budzet: 70000000, prihod: 481840909, profit: 411840909
+   - The Green Mile (1999), ocjena: 4.028, broj ocjena: 30482, budzet: 60000000, prihod: 284600000, profit: 224600000

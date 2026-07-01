@@ -1,0 +1,79 @@
+PITANJE 4 - V1 / NEOPTIMIZOVANA SEMA
+============================================================
+Koji reziseri imaju najmanje 3 filma sa prosjecnom MovieLens ocjenom vecom od 4.0, najmanje 1.000 korisnickih ocjena po filmu i genome tagom 'dark', 'psychological', 'plot twist', 'twist', 'twist ending' ili 'twists & turns', pri cemu je relevantnost taga veca od 0.7?
+
+Vrijeme izvrsavanja: 97.549 sekundi
+Broj rezultata: 7
+
+1. Alfred Hitchcock
+   Broj filmova: 9
+   Prosjecna ocjena filmova: 4.117
+   Ukupan broj MovieLens ocjena: 95663
+   Primjeri filmova i tagova:
+   - Vertigo (1958), ocjena: 4.121, broj ocjena: 15945, tagovi: plot twist (0.736), psychological (0.907), twists & turns (0.859)
+   - Dial M for Murder (1954), ocjena: 4.034, broj ocjena: 5999, tagovi: twists & turns (0.867)
+   - Notorious (1946), ocjena: 4.161, broj ocjena: 5062, tagovi: twists & turns (0.744)
+   - Shadow of a Doubt (1943), ocjena: 4.112, broj ocjena: 2331, tagovi: psychological (0.856)
+   - Rear Window (1954), ocjena: 4.238, broj ocjena: 20162, tagovi: twists & turns (0.795)
+   - Psycho (1960), ocjena: 4.067, broj ocjena: 22146, tagovi: dark (0.719), plot twist (0.723), psychological (0.953), twist ending (0.847), twists & turns (0.862)
+   - The Lady Vanishes (1938), ocjena: 4.057, broj ocjena: 2263, tagovi: twists & turns (0.8)
+   - Rebecca (1940), ocjena: 4.07, broj ocjena: 4905, tagovi: psychological (0.77), twists & turns (0.758)
+
+2. Christopher Nolan
+   Broj filmova: 5
+   Prosjecna ocjena filmova: 4.133
+   Ukupan broj MovieLens ocjena: 167186
+   Primjeri filmova i tagova:
+   - The Prestige (2006), ocjena: 4.093, broj ocjena: 22943, tagovi: dark (0.933), plot twist (0.99), psychological (0.913), twist ending (0.962), twist (0.952), twists & turns (0.993)
+   - The Dark Knight (2008), ocjena: 4.167, broj ocjena: 41519, tagovi: dark (0.935), plot twist (0.705), psychological (0.724)
+   - Interstellar (2014), ocjena: 4.098, broj ocjena: 22634, tagovi: plot twist (0.769)
+   - Memento (2000), ocjena: 4.15, broj ocjena: 41195, tagovi: dark (0.815), plot twist (0.982), psychological (0.95), twist (0.917), twists & turns (0.98), twist ending (0.925)
+   - Inception (2010), ocjena: 4.156, broj ocjena: 38895, tagovi: plot twist (0.944), psychological (0.914), twist ending (0.756), twist (0.712), twists & turns (0.889)
+
+3. Francis Ford Coppola
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.186
+   Ukupan broj MovieLens ocjena: 117587
+   Primjeri filmova i tagova:
+   - The Godfather (1972), ocjena: 4.324, broj ocjena: 52498, tagovi: twists & turns (0.737)
+   - The Conversation (1974), ocjena: 4.044, broj ocjena: 4531, tagovi: plot twist (0.729), psychological (0.946), twists & turns (0.817)
+   - Apocalypse Now (1979), ocjena: 4.115, broj ocjena: 26370, tagovi: dark (0.952), psychological (0.874)
+   - The Godfather: Part II (1974), ocjena: 4.262, broj ocjena: 34188, tagovi: dark (0.71), twists & turns (0.731)
+
+4. Stanley Kubrick
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.078
+   Ukupan broj MovieLens ocjena: 62445
+   Primjeri filmova i tagova:
+   - Full Metal Jacket (1987), ocjena: 4.043, broj ocjena: 25946, tagovi: dark (0.855), psychological (0.836)
+   - The Killing (1956), ocjena: 4.043, broj ocjena: 2314, tagovi: twists & turns (0.73)
+   - The Shining (1980), ocjena: 4.028, broj ocjena: 29931, tagovi: dark (0.855), psychological (0.964)
+   - Paths of Glory (1957), ocjena: 4.199, broj ocjena: 4254, tagovi: psychological (0.752)
+
+5. Quentin Tarantino
+   Broj filmova: 4
+   Prosjecna ocjena filmova: 4.074
+   Ukupan broj MovieLens ocjena: 158070
+   Primjeri filmova i tagova:
+   - Inglourious Basterds (2009), ocjena: 4.011, broj ocjena: 23077, tagovi: twists & turns (0.73)
+   - Reservoir Dogs (1992), ocjena: 4.092, broj ocjena: 34634, tagovi: plot twist (0.726), twist (0.741), twists & turns (0.921)
+   - Pulp Fiction (1994), ocjena: 4.189, broj ocjena: 79672, tagovi: plot twist (0.896), twist (0.823), twists & turns (0.95), twist ending (0.722)
+   - Django Unchained (2012), ocjena: 4.005, broj ocjena: 20687, tagovi: twists & turns (0.75)
+
+6. Billy Wilder
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.159
+   Ukupan broj MovieLens ocjena: 14817
+   Primjeri filmova i tagova:
+   - Double Indemnity (1944), ocjena: 4.194, broj ocjena: 5404, tagovi: dark (0.828), twists & turns (0.867)
+   - Witness for the Prosecution (1957), ocjena: 4.076, broj ocjena: 2045, tagovi: plot twist (0.81), twist (0.718), twists & turns (0.935), twist ending (0.909)
+   - Sunset Boulevard (1950), ocjena: 4.207, broj ocjena: 7368, tagovi: dark (0.839)
+
+7. Martin Scorsese
+   Broj filmova: 3
+   Prosjecna ocjena filmova: 4.128
+   Ukupan broj MovieLens ocjena: 87139
+   Primjeri filmova i tagova:
+   - The Departed (2006), ocjena: 4.121, broj ocjena: 25343, tagovi: plot twist (0.85), psychological (0.705), twist (0.706), twists & turns (0.918), twist ending (0.753)
+   - GoodFellas (1990), ocjena: 4.181, broj ocjena: 32663, tagovi: twists & turns (0.782)
+   - Taxi Driver (1976), ocjena: 4.083, broj ocjena: 29133, tagovi: dark (0.948), psychological (0.896)

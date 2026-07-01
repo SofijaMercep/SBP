@@ -1,0 +1,118 @@
+PITANJE 5 - V2 / REORGANIZOVANA OPTIMIZOVANA SEMA
+======================================================================
+Koje filmove mogu preporuciti korisniku userId = 123, ako trazim filmove koje taj korisnik jos nije ocijenio, a koji imaju prosjecnu MovieLens ocjenu vecu od 4.0, najmanje 1.000 ocjena, najmanje jedan zajednicki zanr i najmanje jednog zajednickog glumca iz prva 3 mjesta u cast listi ili istog rezisera sa filmovima koje je korisnik ranije ocijenio ocjenom 4.5 ili 5.0?
+
+Vrijeme izvrsavanja: 0.306 sekundi
+Broj rezultata: 5
+
+Profil korisnika:
+- Ukupan broj ocjena korisnika: 128
+- Broj filmova ocijenjenih sa 4.5 ili 5.0: 6
+- Zanrovi iz visoko ocijenjenih filmova: Action, Adventure, Comedy, Crime, Drama, Romance, Sci-Fi, Thriller, Western
+- Glumci iz prva 3 mjesta: Andrei Chalimon, Bruce Willis, Carlos Gallardo, Dexter Fletcher, Gary Oldman, George Clooney, Guy Pearce, Hugo Weaving, Ian Holm, Jaime de Hoyos, Jason Flemyng, Jennifer Lopez, Libuše Šafránková, Nick Moran, Peter Marquardt, Terence Stamp, Ving Rhames, Zdeněk Svěrák
+- Reziseri: Guy Ritchie, Jan Svěrák, Luc Besson, Robert Rodriguez, Stephan Elliott, Steven Soderbergh
+
+Visoko ocijenjeni filmovi korisnika:
+- The Adventures of Priscilla, Queen of the Desert (1994)
+- Kolya (1996)
+- The Fifth Element (1997)
+- Out of Sight (1998)
+- Lock, Stock and Two Smoking Barrels (1998)
+- El Mariachi (1992)
+
+Preporuceni filmovi:
+
+1. Leon: The Professional (1994)
+   MovieLens movieId: 293
+   TMDB id: 101
+   Decenija: 1990
+   Prosjecna ocjena: 4.089
+   Broj ocjena: 33680
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Zajednicki zanrovi: Action, Crime, Drama, Thriller
+   Zajednicki glumci: Gary Oldman
+   Zajednicki reziseri: Luc Besson
+   Glumci iz prva 3 mjesta: Gary Oldman, Jean Reno, Natalie Portman
+   Reziseri: Luc Besson
+   Popularnost: 20.477329
+   Budzet: 16000000
+   Prihod: 45284974
+   Profit status: profitable
+   Recommendation score: 59.254
+
+2. Snatch (2000)
+   MovieLens movieId: 4011
+   TMDB id: 107
+   Decenija: 2000
+   Prosjecna ocjena: 4.063
+   Broj ocjena: 25101
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Zajednicki zanrovi: Comedy, Crime, Thriller
+   Zajednicki glumci: 
+   Zajednicki reziseri: Guy Ritchie
+   Glumci iz prva 3 mjesta: Benicio del Toro, Dennis Farina, Vinnie Jones
+   Reziseri: Guy Ritchie
+   Popularnost: 14.014025
+   Budzet: 10000000
+   Prihod: 83557872
+   Profit status: profitable
+   Recommendation score: 53.143
+
+3. Memento (2000)
+   MovieLens movieId: 4226
+   TMDB id: 77
+   Decenija: 2000
+   Prosjecna ocjena: 4.15
+   Broj ocjena: 41195
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Zajednicki zanrovi: Thriller
+   Zajednicki glumci: Guy Pearce
+   Zajednicki reziseri: 
+   Glumci iz prva 3 mjesta: Carrie-Anne Moss, Guy Pearce, Joe Pantoliano
+   Reziseri: Christopher Nolan
+   Popularnost: 15.450789
+   Budzet: 9000000
+   Prihod: 39723096
+   Profit status: profitable
+   Recommendation score: 50.619
+
+4. L.A. Confidential (1997)
+   MovieLens movieId: 1617
+   TMDB id: 2118
+   Decenija: 1990
+   Prosjecna ocjena: 4.063
+   Broj ocjena: 27749
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Zajednicki zanrovi: Crime, Thriller
+   Zajednicki glumci: Guy Pearce
+   Zajednicki reziseri: 
+   Glumci iz prva 3 mjesta: Danny DeVito, Guy Pearce, Kevin Spacey
+   Reziseri: Curtis Hanson
+   Popularnost: 10.989442
+   Budzet: 35000000
+   Prihod: 126216940
+   Profit status: profitable
+   Recommendation score: 50.407
+
+5. The Sixth Sense (1999)
+   MovieLens movieId: 2762
+   TMDB id: 745
+   Decenija: 1990
+   Prosjecna ocjena: 4.01
+   Broj ocjena: 46713
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Zajednicki zanrovi: Drama
+   Zajednicki glumci: Bruce Willis
+   Zajednicki reziseri: 
+   Glumci iz prva 3 mjesta: Bruce Willis, Olivia Williams, Toni Collette
+   Reziseri: M. Night Shyamalan
+   Popularnost: 18.449169
+   Budzet: 40000000
+   Prihod: 672806292
+   Profit status: profitable
+   Recommendation score: 49.769

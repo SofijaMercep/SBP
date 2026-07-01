@@ -1,0 +1,6 @@
+question,v2_time_seconds,result_count,file
+1,0.217,3,v2\results\question_1_v2_results.txt
+2,0.125,20,v2\results\question_2_v2_results.txt
+3,0.028,4,v2\results\question_3_v2_results.txt
+4,0.131,7,v2\results\question_4_v2_results.txt
+5,0.306,5,v2\results\question_5_v2_results.txt

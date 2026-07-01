@@ -1,0 +1,57 @@
+PITANJE 1 - V2 / REORGANIZOVANA OPTIMIZOVANA SEMA
+======================================================================
+Koje Science Fiction filmove objavljene poslije 2000. godine mogu preporuciti siroj publici ako imaju prosjecnu MovieLens ocjenu vecu od 4.0, najmanje 5.000 korisnickih ocjena, budzet veci od 50 miliona dolara i najmanje 3 glumca u cast listi?
+
+Vrijeme izvrsavanja: 0.217 sekundi
+Broj rezultata: 3
+
+1. Inception (2010)
+   MovieLens movieId: 79132
+   TMDB id: 27205
+   Decenija: 2010
+   Zanrovi: Action, Adventure, Crime, Drama, IMAX, Mystery, Sci-Fi, Science Fiction, Thriller
+   Prosjecna ocjena: 4.156
+   Broj ocjena: 38895
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Budzet: 160000000
+   Prihod: 825532764
+   Profit status: profitable
+   Budget bucket: blockbuster
+   Popularnost: 29.108149
+   Glumci iz prva 3 mjesta: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
+   Reziseri: Christopher Nolan
+
+2. Interstellar (2014)
+   MovieLens movieId: 109487
+   TMDB id: 157336
+   Decenija: 2010
+   Zanrovi: Adventure, Drama, IMAX, Sci-Fi, Science Fiction
+   Prosjecna ocjena: 4.098
+   Broj ocjena: 22634
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Budzet: 165000000
+   Prihod: 675120017
+   Profit status: profitable
+   Budget bucket: blockbuster
+   Popularnost: 32.213481
+   Glumci iz prva 3 mjesta: Matthew McConaughey, Jessica Chastain, Anne Hathaway
+   Reziseri: Christopher Nolan
+
+3. The Martian (2015)
+   MovieLens movieId: 134130
+   TMDB id: 286217
+   Decenija: 2010
+   Zanrovi: Adventure, Drama, Sci-Fi, Science Fiction
+   Prosjecna ocjena: 4.033
+   Broj ocjena: 16489
+   Rating bucket: very_good
+   Rating count bucket: mass
+   Budzet: 108000000
+   Prihod: 630161890
+   Profit status: profitable
+   Budget bucket: high
+   Popularnost: 25.62993
+   Glumci iz prva 3 mjesta: Matt Damon, Jessica Chastain, Kristen Wiig
+   Reziseri: Ridley Scott

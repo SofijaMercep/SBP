@@ -1,0 +1,11 @@
+V2 BUILD SUMMARY - REORGANIZOVANA OPTIMIZOVANA SEMA
+======================================================================
+Ukupno vrijeme izgradnje v2: 261.436 sekundi
+movies_optimized count: 59047
+user_profiles_optimized count: 1
+Insertovano filmova: 59047
+Preskoceno filmova bez rating statistike: 3376
+
+Opis optimizacije:
+V2 sema je reorganizovana oko dokumenta filma. Umjesto razdvojenih sirovih kolekcija, kolekcija movies_optimized cuva osnovne podatke, zanrove, rating statistiku, komercijalne podatke, glumce, rezisere, genome tagove i bucket kategorije u jednom dokumentu.
+Kolekcija user_profiles_optimized cuva unaprijed pripremljen profil korisnika za potrebe preporuka.

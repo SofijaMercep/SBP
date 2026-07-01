@@ -1,0 +1,74 @@
+PITANJE 3 - V2 / REORGANIZOVANA OPTIMIZOVANA SEMA
+======================================================================
+Koji filmovi imaju prosjecnu MovieLens ocjenu vecu od 4.1, najmanje 2.000 korisnickih ocjena, TMDB popularnost manju od 15, poznat budzet i prihod, ali budzet veci od prihoda?
+
+Vrijeme izvrsavanja: 0.028 sekundi
+Broj rezultata: 4
+
+1. All About Eve (1950)
+   MovieLens movieId: 926
+   TMDB id: 705
+   Decenija: 1950
+   Zanrovi: Drama
+   Prosjecna ocjena: 4.17
+   Broj ocjena: 5068
+   Rating bucket: very_good
+   Budzet: 1400000
+   Prihod: 63463
+   Profit: -1336537
+   Profit status: not_profitable
+   Profit bucket: loss
+   Odnos prihoda i budzeta: 0.045
+   TMDB popularnost: 12.06308
+   Popularity bucket: medium
+
+2. Ran (1985)
+   MovieLens movieId: 1217
+   TMDB id: 11645
+   Decenija: 1980
+   Zanrovi: Action, Drama, History, War
+   Prosjecna ocjena: 4.142
+   Broj ocjena: 5220
+   Rating bucket: very_good
+   Budzet: 11500000
+   Prihod: 4069653
+   Profit: -7430347
+   Profit status: not_profitable
+   Profit bucket: loss
+   Odnos prihoda i budzeta: 0.354
+   TMDB popularnost: 12.250232
+   Popularity bucket: medium
+
+3. Rashomon (1950)
+   MovieLens movieId: 5291
+   TMDB id: 548
+   Decenija: 1950
+   Zanrovi: Crime, Drama, Mystery
+   Prosjecna ocjena: 4.127
+   Broj ocjena: 4721
+   Rating bucket: very_good
+   Budzet: 250000
+   Prihod: 96568
+   Profit: -153432
+   Profit status: not_profitable
+   Profit bucket: loss
+   Odnos prihoda i budzeta: 0.386
+   TMDB popularnost: 9.887355
+   Popularity bucket: medium
+
+4. City Lights (1931)
+   MovieLens movieId: 3307
+   TMDB id: 901
+   Decenija: 1930
+   Zanrovi: Comedy, Drama, Romance
+   Prosjecna ocjena: 4.111
+   Broj ocjena: 3170
+   Rating bucket: very_good
+   Budzet: 1500000
+   Prihod: 19181
+   Profit: -1480819
+   Profit status: not_profitable
+   Profit bucket: loss
+   Odnos prihoda i budzeta: 0.013
+   TMDB popularnost: 10.891524
+   Popularity bucket: medium

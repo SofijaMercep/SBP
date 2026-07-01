@@ -1,0 +1,39 @@
+PITANJE 1 - V1 / NEOPTIMIZOVANA SEMA
+============================================================
+Koje Science Fiction filmove objavljene poslije 2000. godine mogu preporuciti siroj publici ako imaju prosjecnu MovieLens ocjenu vecu od 4.0, najmanje 5.000 korisnickih ocjena, budzet veci od 50 miliona dolara i najmanje 3 glumca u cast listi?
+
+Vrijeme izvrsavanja: 90.748 sekundi
+Broj rezultata: 3
+
+1. Inception (2010)
+   MovieLens movieId: 79132
+   TMDB id: 27205
+   Prosjecna ocjena: 4.156
+   Broj ocjena: 38895
+   Budzet: 160000000
+   Prihod: 825532764
+   Popularnost: 29.108149
+   Glumci: Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page
+   Reziseri: Christopher Nolan
+
+2. Interstellar (2014)
+   MovieLens movieId: 109487
+   TMDB id: 157336
+   Prosjecna ocjena: 4.098
+   Broj ocjena: 22634
+   Budzet: 165000000
+   Prihod: 675120017
+   Popularnost: 32.213481
+   Glumci: Matthew McConaughey, Jessica Chastain, Anne Hathaway
+   Reziseri: Christopher Nolan
+
+3. The Martian (2015)
+   MovieLens movieId: 134130
+   TMDB id: 286217
+   Prosjecna ocjena: 4.033
+   Broj ocjena: 16489
+   Budzet: 108000000
+   Prihod: 630161890
+   Popularnost: 25.62993
+   Glumci: Matt Damon, Jessica Chastain, Kristen Wiig
+   Reziseri: Ridley Scott

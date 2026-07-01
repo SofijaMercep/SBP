@@ -1,0 +1,9 @@
+V2 SUMMARY - OPTIMIZOVANA SEMA
+============================================================
+Pitanje | Vrijeme izvrsavanja | Broj rezultata
+------------------------------------------------------------
+Pitanje 1 | 0.217 sekundi | 3 rezultata
+Pitanje 2 | 0.125 sekundi | 20 rezultata
+Pitanje 3 | 0.028 sekundi | 4 rezultata
+Pitanje 4 | 0.131 sekundi | 7 rezultata
+Pitanje 5 | 0.306 sekundi | 5 rezultata

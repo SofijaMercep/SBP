@@ -1,0 +1,9 @@
+V1 SUMMARY - NEOPTIMIZOVANA SEMA
+============================================================
+Pitanje | Vrijeme izvrsavanja | Broj rezultata
+------------------------------------------------------------
+Pitanje 1 | 90.748 sekundi | 3 rezultata
+Pitanje 2 | 149.320 sekundi | 20 rezultata
+Pitanje 3 | 69.706 sekundi | 4 rezultata
+Pitanje 4 | 97.549 sekundi | 7 rezultata
+Pitanje 5 | 128.164 sekundi | 5 rezultata

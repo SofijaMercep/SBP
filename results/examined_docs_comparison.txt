@@ -1,0 +1,10 @@
+PREGLEDANI DOKUMENTI PO UPITU - V1 VS V2
+================================================================================
+Mjera: totalDocsExamined iz MongoDB explain('executionStats') plana.
+Napomena: kod upita koji imaju više faza rezultat je zbir explain vrijednosti za glavne operacije.
+
+Pitanje 1: V1 pregledano 40.240.563 dokumenata, V2 pregledano 140 dokumenata, smanjenje 287432.59x
+Pitanje 2: V1 pregledano 59.258.407 dokumenata, V2 pregledano 145 dokumenata, smanjenje 408678.67x
+Pitanje 3: V1 pregledano 34.494.063 dokumenata, V2 pregledano 5 dokumenata, smanjenje 6898812.60x
+Pitanje 4: V1 pregledano 40.739.033 dokumenata, V2 pregledano 255 dokumenata, smanjenje 159760.91x
+Pitanje 5: V1 pregledano 50.386.297 dokumenata, V2 pregledano 375 dokumenata, smanjenje 134363.46x
