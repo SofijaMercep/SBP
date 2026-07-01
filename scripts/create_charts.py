@@ -255,7 +255,6 @@ def main() -> None:
     create_document_count_chart()
     create_execution_time_chart(v1, v2)
     create_speedup_chart(speedups)
-    create_result_count_chart(v1, v2)
     create_v2_coverage_chart()
 
     print("")

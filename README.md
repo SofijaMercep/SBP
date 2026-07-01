@@ -1,6 +1,6 @@
 # MongoDB projekat - Sistemi baza podataka
 
-***Tema:***  Analiza preporuke i ocjena filmova po zanru, glumcima i reziserima
+***Tema:***  Analiza preporuke i ocjena filmova po žanru, glumcima i režiserima
 
 ***Autor:***  Sofija Merćep  
 ***Indeks:***  IN57/2019  
@@ -23,6 +23,7 @@ ml_movies.movieId -> ml_links.movieId
 ml_links.tmdbId  -> tmdb_movies_metadata.id
 ml_links.tmdbId  -> tmdb_credits.id
 ml_links.tmdbId  -> tmdb_keywords.id
+```
 
 ## Rezultati
 
@@ -51,7 +52,10 @@ Detalji implementacije upita nad prvom šemom dostupni su u [v1/queries](./v1/qu
 
 ### Performanse
 
-Procjena performansi izvršena je poređenjem vremena izvršavanja upita nad v1 i v2 šemom, kao i pomoću metode explain("executionStats") koju nudi MongoDB.Na graficima je prikazano izmjereno vrijeme izvršavanja upita nad prvom i drugom verzijom baze, kao i broj pregledanih dokumenata po upitu.
+Procjena performansi izvršena je poređenjem vremena izvršavanja upita nad v1 i v2 šemom, kao i analizom MongoDB `explain` plana sa `executionStats` nivoom detalja.
+Vrijeme izvršavanja mjereno je u Python skriptama, kao razlika između vremena prije i poslije izvršavanja upita. Broj pregledanih dokumenata izračunat je na osnovu vrijednosti `totalDocsExamined` iz MongoDB `explain` plana. Kod složenih upita koji imaju više faza, rezultat predstavlja zbir `totalDocsExamined` vrijednosti za glavne operacije upita.
+Na graficima je prikazano izmjereno vrijeme izvršavanja upita nad prvom i drugom verzijom baze, kao i broj pregledanih dokumenata po upitu.
+
 
 ![Vrijeme izvršavanja](./vrijeme_izvrsavanja.png?raw=true)
 ![Broj dokumenata](./pregledani_dokumenti_po_upitu.png?raw=true)
