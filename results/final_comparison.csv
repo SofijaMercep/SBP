@@ -1,6 +1,6 @@
 question,description,v1_time_seconds,v2_time_seconds,result_count,speedup
-1,"Science Fiction filmovi poslije 2000. godine sa ocjenom > 4.0, najmanje 5.000 ocjena, budzetom > 50 miliona i najmanje 3 glumca.",90.748,0.217,3,418.19
-2,"Glumci iz prva 3 mjesta u cast listi u filmovima sa ocjenom > 4.0, najmanje 1.000 ocjena i prihodom vecim od budzeta.",149.320,0.125,20,1194.56
-3,"Filmovi sa ocjenom > 4.1, najmanje 2.000 ocjena, popularnoscu < 15 i budzetom vecim od prihoda.",69.706,0.028,4,2489.50
-4,"Reziseri sa najmanje 3 filma, ocjenom > 4.0, najmanje 1.000 ocjena i konkretnim genome tagovima relevantnosti > 0.7.",97.549,0.131,7,744.65
-5,"Preporuka filmova za userId = 123 na osnovu visokih ocjena, zajednickih zanrova, glumaca i rezisera.",128.164,0.306,5,418.84
+1,"Science Fiction filmovi poslije 2000. godine sa ocjenom > 4.0, najmanje 5.000 ocjena, budzetom > 50 miliona i najmanje 3 glumca.",90.748,0.559,3,162.34
+2,"Glumci iz prva 3 mjesta u cast listi u filmovima sa ocjenom > 4.0, najmanje 1.000 ocjena i prihodom vecim od budzeta.",149.320,0.104,20,1435.77
+3,"Filmovi sa ocjenom > 4.1, najmanje 2.000 ocjena, popularnoscu < 15 i budzetom vecim od prihoda.",69.706,0.077,4,905.27
+4,"Reziseri sa najmanje 3 filma, ocjenom > 4.0, najmanje 1.000 ocjena i konkretnim genome tagovima relevantnosti > 0.7.",97.549,0.247,7,394.94
+5,"Preporuka filmova za userId = 123 na osnovu visokih ocjena, zajednickih zanrova, glumaca i rezisera.",128.164,0.037,5,3463.89

@@ -1,8 +1,8 @@
 V2 BUILD SUMMARY - REORGANIZOVANA OPTIMIZOVANA SEMA
 ======================================================================
-Ukupno vrijeme izgradnje v2: 261.436 sekundi
+Ukupno vrijeme izgradnje v2: 465.443 sekundi
 movies_optimized count: 59047
-user_profiles_optimized count: 1
+user_profiles_optimized count: 154052
 Insertovano filmova: 59047
 Preskoceno filmova bez rating statistike: 3376
 

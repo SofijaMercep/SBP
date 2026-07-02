@@ -625,31 +625,17 @@ def create_movies_optimized(db, rating_stats, ml_movies, links, metadata_by_tmdb
 
 
 def create_user_profiles_optimized(db):
-    print(f"8/8 Kreiram user_profiles_optimized za userId = {USER_ID}...")
+    print("8/8 Kreiram user_profiles_optimized za vise korisnika...")
 
     user_profiles = db.user_profiles_optimized
     user_profiles.drop()
 
-    user_ratings = list(db.ml_ratings.find(
-        {"userId": USER_ID},
-        {"_id": 0, "movieId": 1, "rating": 1}
-    ))
+    min_liked_movies = 3
 
-    rated_movie_ids = [
-        get_int(row.get("movieId"))
-        for row in user_ratings
-        if get_int(row.get("movieId")) is not None
-    ]
+    movie_profile_index = {}
 
-    liked_movie_ids = [
-        get_int(row.get("movieId"))
-        for row in user_ratings
-        if get_float(row.get("rating"), 0) >= 4.5
-        and get_int(row.get("movieId")) is not None
-    ]
-
-    liked_movies = list(db.movies_optimized.find(
-        {"movieId": {"$in": liked_movie_ids}},
+    for movie in db.movies_optimized.find(
+        {},
         {
             "_id": 0,
             "movieId": 1,
@@ -660,43 +646,140 @@ def create_user_profiles_optimized(db):
             "people.topCastNames": 1,
             "people.directors": 1,
         }
-    ))
+    ):
+        movie_id = get_int(movie.get("movieId"))
 
-    liked_ml_genres = set()
-    liked_all_genres = set()
-    liked_principal_actors = set()
-    liked_top_actors = set()
-    liked_directors = set()
+        if movie_id is None:
+            continue
 
-    for movie in liked_movies:
         genres = movie.get("genres", {})
         people = movie.get("people", {})
 
-        liked_ml_genres.update(genres.get("ml", []))
-        liked_all_genres.update(genres.get("all", []))
-        liked_principal_actors.update(people.get("principalCastNames", []))
-        liked_top_actors.update(people.get("topCastNames", []))
-        liked_directors.update(people.get("directors", []))
+        movie_profile_index[movie_id] = {
+            "mlGenres": genres.get("ml", []),
+            "allGenres": genres.get("all", []),
+            "principalActors": people.get("principalCastNames", []),
+            "topActors": people.get("topCastNames", []),
+            "directors": people.get("directors", []),
+        }
 
-    user_profiles.insert_one({
-        "userId": USER_ID,
-        "ratingCount": len(user_ratings),
-        "ratedMovieIds": rated_movie_ids,
-        "likedMovieIds": liked_movie_ids,
-        "likedMovieCount": len(liked_movie_ids),
-        "likedGenres": {
-            "ml": sorted(liked_ml_genres),
-            "all": sorted(liked_all_genres),
-        },
-        "likedActors": {
-            "principal": sorted(liked_principal_actors),
-            "top": sorted(liked_top_actors),
-        },
-        "likedDirectors": sorted(liked_directors),
-    })
+    users_cursor = db.ml_ratings.aggregate(
+        [
+            {
+                "$group": {
+                    "_id": "$userId",
+                    "ratingCount": {"$sum": 1},
+                    "likedRatingCount": {
+                        "$sum": {
+                            "$cond": [
+                                {"$gte": ["$rating", 4.5]},
+                                1,
+                                0
+                            ]
+                        }
+                    },
+                    "ratedMovieIds": {"$push": "$movieId"},
+                    "likedMovieIdsWithNulls": {
+                        "$push": {
+                            "$cond": [
+                                {"$gte": ["$rating", 4.5]},
+                                "$movieId",
+                                None
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "$match": {
+                    "likedRatingCount": {"$gte": min_liked_movies}
+                }
+            }
+        ],
+        allowDiskUse=True
+    )
 
-    print(f"   Profil korisnika napravljen. Broj ocjena: {len(user_ratings)}")
-    print(f"   Broj visoko ocijenjenih filmova: {len(liked_movie_ids)}")
+    inserted = 0
+    skipped = 0
+    batch = []
+
+    for user in users_cursor:
+        user_id = get_int(user.get("_id"))
+
+        if user_id is None:
+            skipped += 1
+            continue
+
+        rated_movie_ids = [
+            get_int(movie_id)
+            for movie_id in user.get("ratedMovieIds", [])
+            if get_int(movie_id) is not None
+        ]
+
+        liked_movie_ids = [
+            get_int(movie_id)
+            for movie_id in user.get("likedMovieIdsWithNulls", [])
+            if get_int(movie_id) is not None
+        ]
+
+        if len(liked_movie_ids) < min_liked_movies:
+            skipped += 1
+            continue
+
+        liked_ml_genres = set()
+        liked_all_genres = set()
+        liked_principal_actors = set()
+        liked_top_actors = set()
+        liked_directors = set()
+
+        matched_liked_movies = 0
+
+        for movie_id in liked_movie_ids:
+            movie_profile = movie_profile_index.get(movie_id)
+
+            if not movie_profile:
+                continue
+
+            matched_liked_movies += 1
+            liked_ml_genres.update(movie_profile["mlGenres"])
+            liked_all_genres.update(movie_profile["allGenres"])
+            liked_principal_actors.update(movie_profile["principalActors"])
+            liked_top_actors.update(movie_profile["topActors"])
+            liked_directors.update(movie_profile["directors"])
+
+        if matched_liked_movies < min_liked_movies:
+            skipped += 1
+            continue
+
+        batch.append({
+            "userId": user_id,
+            "ratingCount": len(rated_movie_ids),
+            "ratedMovieIds": rated_movie_ids,
+            "likedMovieIds": liked_movie_ids,
+            "likedMovieCount": len(liked_movie_ids),
+            "matchedLikedMovieCount": matched_liked_movies,
+            "likedGenres": {
+                "ml": sorted(liked_ml_genres),
+                "all": sorted(liked_all_genres),
+            },
+            "likedActors": {
+                "principal": sorted(liked_principal_actors),
+                "top": sorted(liked_top_actors),
+            },
+            "likedDirectors": sorted(liked_directors),
+        })
+
+        if len(batch) >= 500:
+            user_profiles.insert_many(batch)
+            inserted += len(batch)
+            batch = []
+
+    if batch:
+        user_profiles.insert_many(batch)
+        inserted += len(batch)
+
+    print(f"   user_profiles_optimized insertovano: {inserted}")
+    print(f"   Korisnickih profila preskoceno: {skipped}")
 
 
 def create_indexes(db):

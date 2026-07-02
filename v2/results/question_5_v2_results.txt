@@ -2,7 +2,7 @@ PITANJE 5 - V2 / REORGANIZOVANA OPTIMIZOVANA SEMA
 ======================================================================
 Koje filmove mogu preporuciti korisniku userId = 123, ako trazim filmove koje taj korisnik jos nije ocijenio, a koji imaju prosjecnu MovieLens ocjenu vecu od 4.0, najmanje 1.000 ocjena, najmanje jedan zajednicki zanr i najmanje jednog zajednickog glumca iz prva 3 mjesta u cast listi ili istog rezisera sa filmovima koje je korisnik ranije ocijenio ocjenom 4.5 ili 5.0?
 
-Vrijeme izvrsavanja: 0.306 sekundi
+Vrijeme izvrsavanja: 0.037 sekundi
 Broj rezultata: 5
 
 Profil korisnika:

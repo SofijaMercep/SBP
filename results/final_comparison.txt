@@ -2,11 +2,11 @@ FINALNO POREĐENJE V1 I V2 ŠEME
 ==========================================================================================
 Pitanje | V1 vrijeme | V2 vrijeme | Broj rezultata | Ubrzanje
 ------------------------------------------------------------------------------------------
-Pitanje 1 | 90.748s | 0.217s | 3 | 418.19x brze
-Pitanje 2 | 149.320s | 0.125s | 20 | 1194.56x brze
-Pitanje 3 | 69.706s | 0.028s | 4 | 2489.50x brze
-Pitanje 4 | 97.549s | 0.131s | 7 | 744.65x brze
-Pitanje 5 | 128.164s | 0.306s | 5 | 418.84x brze
+Pitanje 1 | 90.748s | 0.559s | 3 | 162.34x brze
+Pitanje 2 | 149.320s | 0.104s | 20 | 1435.77x brze
+Pitanje 3 | 69.706s | 0.077s | 4 | 905.27x brze
+Pitanje 4 | 97.549s | 0.247s | 7 | 394.94x brze
+Pitanje 5 | 128.164s | 0.037s | 5 | 3463.89x brze
 
 Zakljucak:
 Optimizovana v2 sema znacajno ubrzava izvrsavanje slozenih analitickih upita. U v1 semi podaci su rasporedjeni kroz vise kolekcija i zahtijevaju grupisanje, povezivanje i filtriranje nad velikim brojem dokumenata. U v2 semi su najvazniji podaci unaprijed spojeni u kolekciji movies_optimized, a profil korisnika je pripremljen u user_profiles_optimized.
